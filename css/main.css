@@ -1,3 +1,9 @@
 * {
   background-color: #3b3b3b;
 }
+
+.side-bar {
+  position: fixed;
+  list-style-type: none;
+}
+  
