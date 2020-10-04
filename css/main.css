@@ -4,6 +4,7 @@
 
 .side-bar {
   list-style-type: none;
+  float:left;
   position: fixed;
   border-rasius:50%;
   background-color:blue;
