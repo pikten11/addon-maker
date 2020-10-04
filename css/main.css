@@ -45,9 +45,15 @@ li{
 }
 
 .card-inner{
+  position: relative;
   padding:25px 30px;
-  background-color:#fff0cc;
+  background-color:#ffffff;
   border-radius:7px;
-  box-shadow:1px 1px 4px #ede8dd;
-  text-align:center;
+  box-shadow:1px 1px 4px #d1d1d1;
+}
+
+.card-inner h2{
+  position: absolute;
+  background: skyblue;
+  color: white;
 }
