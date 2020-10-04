@@ -32,3 +32,22 @@ li{
   box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
   border-bottom: none;
 }
+
+.wrapper{
+  display:flex;
+  flex-wrap:wrap;
+  margin:20px 20px;
+}
+
+.card{
+  width:45%;
+  margin-top:35px;
+}
+
+.card-inner{
+  padding:25px 30px;
+  background-color:#fff0cc;
+  border-radius:7px;
+  box-shadow:1px 1px 4px #ede8dd;
+  text-align:center;
+}
