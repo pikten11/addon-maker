@@ -3,9 +3,9 @@
 }
 
 .side-bar {
+  list-style-type: none;
   position: fixed;
   border-rasius:50%;
   background-color:blue;
-  list-style-type: none;
 }
   
