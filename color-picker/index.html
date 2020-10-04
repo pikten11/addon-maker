@@ -10,6 +10,26 @@
     <script>
       var pickr = new Pickr({
         el: '#color-picker'
+        
+        //ショートカットキーの設定
+        closeWithKey: 'Escape',
+        
+        //コンポーネントの表示設定
+        components: {
+
+
+        preview: true, //現在のカラー
+        opacity: true, //透明度
+        hue: true, //色相バー
+
+
+        output: {
+        hex: true,   //HEX値
+        rgba: true, //RGBa値
+        hsla: true, //HSLa値
+        input: true //カラー値の出力を表示
+      } //色の出力設定
+                            }
       });
     </script>
   </body>
