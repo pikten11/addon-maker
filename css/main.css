@@ -2,8 +2,11 @@
   background-color: #3b3b3b;
 }
 
+li{
+  list-style-type:none;
+}
+
 .side-bar {
-  list-style-type: none;
   float:left;
   position: fixed;
   margin:10px;
