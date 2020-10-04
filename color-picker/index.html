@@ -3,33 +3,38 @@
   <head>
     <meta charset="utf-8">
     <title>COLOR PICKER</title>
+    <link rel="stylesheet" href="https://simonwep.github.io/pickr/dist/pickr.min.css">
   </head>
   <body>
     <div id="color-picker"></div>
     <script src="https://simonwep.github.io/pickr/dist/pickr.min.js"></script>
     <script>
       var pickr = new Pickr({
-        el: '#color-picker'
-        
-        //ショートカットキーの設定
-        closeWithKey: 'Escape',
-        
-        //コンポーネントの表示設定
+
+        el: '#color-picker',
+
         components: {
+          preview: true,
+          opacity: true,
+          hue: true,
+
+          output: {
+            hex: true,
+            rgba: true,
+            hsla: true,
+            input: true
+          }
+        },
 
 
-        preview: true, //現在のカラー
-        opacity: true, //透明度
-        hue: true, //色相バー
 
+        onChange( hsva ) {
 
-        output: {
-        hex: true,   //HEX値
-        rgba: true, //RGBa値
-        hsla: true, //HSLa値
-        input: true //カラー値の出力を表示
-      } //色の出力設定
-                            }
+          //body要素の背景色に選択したカラー値を設定する
+          document.body.style.backgroundColor = hsva.toHEX();
+
+        }
+
       });
     </script>
   </body>
