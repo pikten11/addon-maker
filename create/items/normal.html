@@ -15,6 +15,28 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.css">
     <script type="text/javascript" src="../../js/tab.js" defer></script>
+    <div id="jquery-ui-dialog" title="タブ追加フォーム">
+    <form>
+      <fieldset class="ui-helper-reset">
+            <label for="tab_title">タイトル</label>
+            <input type="text" name="tab_title" id="tab_title" value="" class="ui-widget-content ui-corner-all" />
+            <label for="tab_content">内容</label>
+            <textarea name="tab_content" id="tab_content" class="ui-widget-content ui-corner-all"></textarea>
+      </fieldset>
+      </form>
+    </div>
+    
+    <button id="add_tab">タブを追加</button>
+    
+    <div id="jquery-ui-tabs">
+      <ul>
+        <li><a href="#jquery-ui-tabs-1">タブ 1</a> <span class="ui-icon ui-icon-close">Remove Tab</span></li>
+      </ul>
+      <div id="jquery-ui-tabs-1">
+        <p>タブ 1 の内容。</p>
+        <p>この実装例の、jQuery UI の CSS テーマは、デフォルトのテーマを読み込んで使っている。他の CSS テーマにも対応しているので、色々試してみるといい。</p>
+      </div>
+    </div>
     <div>
       <h2>file name</h2>
       <input></input>
